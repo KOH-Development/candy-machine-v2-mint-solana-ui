@@ -28,7 +28,7 @@ export const getErrorForTransaction = async (
   // wait for all confirmation before geting transaction
   await connection.confirmTransaction(txid, 'max');
 
-  const tx = await connection.getParsedConfirmedTransaction(txid);
+  const tx = await connection.getParsedTransaction(txid);
 
   const errors: string[] = [];
   if (tx?.meta && tx.meta.logMessages) {

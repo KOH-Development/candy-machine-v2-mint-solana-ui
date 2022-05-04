@@ -36,7 +36,7 @@ export const activeWallets = (network: WalletAdapterNetwork) => [
 	// new CloverWalletAdapter(),
 	// new Coin98WalletAdapter(),
 	// new CoinhubWalletAdapter(),
-	// new LedgerWalletAdapter(),
+	new LedgerWalletAdapter(),
 	// new MathWalletAdapter(),
 	// new SafePalWalletAdapter(),
 	// new SolongWalletAdapter(),
